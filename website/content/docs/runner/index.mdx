@@ -48,7 +48,7 @@ or multiple, based on labels.
 Runners can have labels applied to them with the `-label` flag provided alongside the `waypoint runner agent` command.
 
 ```terminal
-% WAYPOINT_SERVER_ADDR=localhost:9701 WAYPOINT_SERVER_TLS=true waypoint runner agent -label=org=hashicorp -label=env=dev -cookie=0000000-0000-0000-0000-000000000000
+$ waypoint runner agent -label=org=hashicorp -label=env=dev
 ```
 
 After the runner is started up, it can be adopted by the server for use in remote operations. With `waypoint runner list`,

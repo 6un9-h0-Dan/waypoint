@@ -123,10 +123,9 @@ may be essential to achieving high availability. Multiple runners could be deplo
 runner profile which targets runners with those labels would "round robin" between the available runners. If one goes down,
 as long as another with the same labels is still online, remote operations will continue to work.
 
-Also evidenced in the example is runner targeting for multi-env operations. In the example, the workspace of the operation,
-dev, is interpolated into the runner profile name dynamically at operation runtime. Additional runners & runner profiles
-could be created for a "test" or "prod" environment, for example, so that at runtime a runner to deploy to the right environment
-is used.
+Also shown in the above example is runner targeting for multi-environment operations. The workspace of the operation
+dev, is interpolated into the runner profile name dynamically at operation runtime. Additional runners and runner profiles
+could be created for a "test" or "prod" environment so that a runner can deploy to the right environment at runtime.
 
 Runner targeting is also useful for workflows where you deploy to multiple clusters in a platform. For example, if you have
 a runner in one Kubernetes cluster, that runner could potentially only perform remote operations within that cluster. However,

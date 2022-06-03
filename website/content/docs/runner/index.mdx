@@ -55,15 +55,15 @@ After the runner is started up, it can be adopted by the server for use in remot
 you can see the full list of available runners & their labels.
 
 ```shell-session
-% waypoint runner list
+$ waypoint runner list
               ID             |  STATE   |  KIND  |         LABELS         | LAST REGISTERED
 -----------------------------+----------+--------+------------------------+------------------
   01G4N53X8DCJR3DJ9R56D6KZKH | pending  | remote | env:dev org:hashicorp  |
 
-% waypoint runner adopt 01G4N53X8DCJR3DJ9R56D6KZKH
+$ waypoint runner adopt 01G4N53X8DCJR3DJ9R56D6KZKH
 Runner "01G4N53X8DCJR3DJ9R56D6KZKH" adopted.
 
-% waypoint runner list
+$ waypoint runner list
               ID             |  STATE   |  KIND  |         LABELS         | LAST REGISTERED
 -----------------------------+----------+--------+------------------------+------------------
   01G4N53X8DCJR3DJ9R56D6KZKH | adopted  | remote | env:dev org:hashicorp  |
